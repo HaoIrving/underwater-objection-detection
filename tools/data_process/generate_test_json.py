@@ -3,8 +3,9 @@ import os
 from glob import glob
 from tqdm import tqdm
 from PIL import Image
-from mmdet.core import underwater_classes
-label_ids = {name: i + 1 for i, name in enumerate(underwater_classes())}
+# from mmdet.core import underwater_classes
+label_ids = {'holothurian': 1, 'echinus': 2, 'scallop': 3, 'starfish': 4}
+# label_ids = {name: i + 1 for i, name in enumerate(underwater_classes())}
 
 
 def save(images, annotations):
